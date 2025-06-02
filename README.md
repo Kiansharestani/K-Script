@@ -72,7 +72,7 @@ user_input = inp("Enter your name: ")
 ## Developer
 
 - Developed by Kian
-- Related projects: KData
+- Related projects: KDB
 
 ---
 
