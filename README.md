@@ -18,7 +18,7 @@
 
 Download the K Script compiler from:
 
-- [GitHub](https://github.com/Kiansharestani/K-Script-compiler)
+- [GitHub](https://github.com/Kiansharestani/K-Script)
 - [Google Sites](https://sites.google.com/view/download-k-script-compiler)
 
 Place the compiler file in your project folder and rename it to `K_Script.py`.
