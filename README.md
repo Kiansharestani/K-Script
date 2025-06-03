@@ -162,16 +162,17 @@ prn(result["text"])
 ## Notes
 
 - K Script is developed in Python.
-- Script files use the `.kpy` extension.
+- Script files use the `.ks` file and python interpreter.
 - You can set the language mode to Python in editors like Visual Studio Code.
+- to run and debug you need Official Python Interpreter And Official Kian  Script Compiler.
+- [python not install in your camputer?]("https://python.org/")
 
 ---
 
 ## Developer
 
 - Developed by Kian
-- Related projects: KData
-
+- Related projects: KDB
 ---
 
 ## License
