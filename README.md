@@ -56,7 +56,6 @@ Create a file with the `.kpy` extension and write your code.
 
 ```python
 from K_Script import *
-init()
 prn("Hello, World")
 ```
 
