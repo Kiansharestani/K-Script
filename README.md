@@ -50,7 +50,7 @@ Place the compiler file in your project folder and rename it to `K_Script.py`.
 
 ### 2. Create a Script File
 
-Create a file with the `.kpy` extension and write your code.
+Create a file with the `.kpy`File and start write your code.
 
 ### 3. Example Code
 
