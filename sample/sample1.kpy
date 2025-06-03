@@ -1,0 +1,5 @@
+from K_Script_0.1_Beta import *
+
+init()
+name = inp("What is your name: ")
+prn(f"Hello {name} !")
