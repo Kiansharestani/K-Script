@@ -1,18 +1,33 @@
-# K Script 0.2
+# K Script 0.3
 
-**K Script** is a simple and educational scripting language developed by Kian. This project includes a compiler (`K_Script_0.2.py`) and a quick start guide for writing basic programs.
+**K Script** is a simple and educational scripting language developed by Kian. This project includes a compiler ([K_Script_0.3_Compiler.py(Don't Download)](K_Script_0.3_Compiler.py)) and a quick start guide for writing basic programs.
+### Warning !!
+- **K Script Version 0.3 now is not puplished. please wait until 7 June 2026 for puplish K Script 0.3 .**
+---
+
+## What's New in 0.3
+
+- **File and Directory Management:** Read, write, delete, check existence, list contents, get size, and more for files and directories.
+- **Advanced HTTP Requests:** Support for GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, plus direct JSON and text fetching.
+- **Clipboard Functions:** Copy, paste, and clear clipboard content.
+- **Mouse and Keyboard Functions:** Click, move, get position, scroll, drag, double-click, and key press detection.
+- **System Information:** Get detailed system and Python environment info.
+- **GUI Functions:** Create windows, show text, and add buttons using Tkinter.
+- **Hardware Access:** Webcam capture, microphone recording, play audio, and show images.
+- **Text, Binary, and JSON File Utilities:** Create, read, and write files in various formats.
+- **Improved Error Handling:** More robust error messages and handling throughout.
+- **Version and Developer Info:** Functions to get version and developer details.
+- **Cleaner, More Modular Codebase:** Over 700 lines of organized code.
 
 ---
 
-## What's New in 0.2
+## Major Differences from 0.2
 
-- Modular structure with more functions (including HTTP GET/POST support)
-- HTTP GET and POST functions now return detailed response info:
-  - `status_code`, `text`, `headers`, `ok`, `reason`, `url`
-- Improved error handling and stability
-- Enhanced compatibility with different environments
-- Updated and expanded documentation
-- Cleaner codebase and better organization
+- Many new functions for file, directory, system, mouse, keyboard, and clipboard operations.
+- Full support for all HTTP request types and direct JSON/text fetching.
+- GUI and hardware-related functions (webcam, microphone, image, audio).
+- Version and developer info functions.
+- Much larger and more professional codebase.
 
 ---
 
@@ -21,27 +36,21 @@
 - Simple and easy-to-understand syntax  
 - Great for learning programming basics  
 - Supports variables, printing output, and getting user input  
-- HTTP GET and POST request support with detailed response info
-- Terminal and system commands:
-  - `clear()` — Clear the terminal screen
-  - `terminal(cmd)` — Run a terminal/command prompt command
-  - `shutdown()` — Shutdown the computer
-  - `restart()` — Restart the computer
-  - `exit()` — Exit the script
-  - `stop(seconds)` — Pause execution for a number of seconds
-  - `is_main()` — Check if the script is running as main
-- Dynamic code execution:
-  - `eval(code)` — Evaluate and run Python code
-- Module importing:
-  - `import_module(name)`, `import_from(module, name)`, `import_all(module)`, `import_all_from(module)`
+- Full HTTP request support  
+- Terminal and system commands  
+- Dynamic code execution  
+- Module importing  
+- File and directory management  
+- Clipboard, mouse, and keyboard utilities  
+- GUI and hardware functions
 
 ---
 
 ## Quick Start
 
 ### 1. Download the Compiler
-
-Download the K Script compiler from:
+1. Download And Install New Oficial [python](python.org)
+2. Download the K Script compiler from:
 
 - [GitHub](https://github.com/Kiansharestani/K-Script-compiler)
 - [Google Sites](https://sites.google.com/view/download-k-script-compiler)
@@ -50,7 +59,7 @@ Place the compiler file in your project folder and rename it to `K_Script.py`.
 
 ### 2. Create a Script File
 
-Create a file with the `.kpy`File and start write your code.
+Create a file with the `.ks` Format and write your code.
 
 ### 3. Example Code
 
@@ -61,111 +70,38 @@ prn("Hello, World")
 
 ---
 
-## Command Reference
-
-### Define a Variable
+## Some Important 0.3 Functions
 
 ```python
-name = "Kian"
-age = 20
-greeting = f"Hello, {name}"
+# File management
+file_write("test.txt", "Hello!", "w")
+content = file_read("test.txt")
+delete_file("test.txt")
+
+# Advanced HTTP requests
+result = request_put("https://example.com", data={"a":1})
+json_data = request_json("https://api.example.com/data")
+
+# Clipboard
+copy_to_clipboard("Copied text")
+text = paste_from_clipboard()
+
+# Mouse and keyboard
+mouse_move(100, 200)
+if keyboard("a"):
+    prn("A key pressed")
+
+# System info
+info = system_info()
+prn(info["system"])
+
+# GUI window
+create_new_window_with_text("Title", "400x300", True, "Hello!")
+
+# Webcam and microphone
+webcam_capture("photo.jpg")
+microphone_record("audio.wav", duration=3)
 ```
-
-### Print Output
-
-```python
-prn("Hello, World")
-```
-
-### Get User Input
-
-```python
-user_input = inp("Enter your name: ")
-```
-
-### Pause Execution
-
-```python
-stop(2)  # pauses for 2 seconds
-```
-
-### Clear Terminal
-
-```python
-clear()
-```
-
-### Run Terminal Command
-
-```python
-terminal("echo Hello from terminal")
-```
-
-### Check if Main
-
-```python
-if is_main():
-    prn("This is the main script.")
-```
-
-### Shutdown Computer
-
-```python
-shutdown()
-```
-
-### Restart Computer
-
-```python
-restart()
-```
-
-### Exit Program
-
-```python
-exit()
-```
-
-### Evaluate Python Code
-
-```python
-eval("prn('Evaluated code!')")
-```
-
-### Import Modules
-
-```python
-mod = import_module("math")
-sqrt = import_from("math", "sqrt")
-all_math = import_all("math")
-all_from_math = import_all_from("math")
-```
-
-### Send a GET Request
-
-```python
-result = request_get("https://example.com")
-prn(result["status_code"])
-prn(result["text"])
-```
-
-### Send a POST Request
-
-```python
-result = request_post("https://example.com", data={"key": "value"})
-prn(result["status_code"])
-prn(result["text"])
-```
-
----
-
-## Notes
-
-- K Script is developed in Python.
-- Script files use the `.ks` file and python interpreter.
-- You can set the language mode to Python in editors like Visual Studio Code.
-- to run and debug you need Official Python Interpreter And Official Kian  Script Compiler.
-- [python not install in your camputer?]("https://python.org/")
 
 ---
 
@@ -173,12 +109,6 @@ prn(result["text"])
 
 - Developed by Kian
 - Related projects: KDB
----
-
-## License
-
-All rights reserved © Kian Script Software Foundation (2026)
-- Developed by Kian
 
 ---
 
