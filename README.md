@@ -1,6 +1,6 @@
 # K Script 0.3
 
-**K Script** is a simple and educational scripting language developed by Kian. This project includes a compiler ([K_Script_0.3_Compiler.py(Don't Download)](K_Script_0.3_Compiler.py)) and a quick start guide for writing basic programs.
+**K Script** is a simple and educational scripting language developed by Kian. This project includes a compiler ( [K_Script_0.3_Compiler.py(Don't Download)](K_Script_0.3_Compiler.py) ) and a quick start guide for writing basic programs.
 ### Warning !!
 - **K Script Version 0.3 now is not puplished. please wait until 7 June 2026 for puplish K Script 0.3 .**
 ---
